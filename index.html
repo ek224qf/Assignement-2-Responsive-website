@@ -1,54 +1,79 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Website</title>
-  </head>
-  <body>
-    <header id="header">
-      <nav id="nav">
-        <ul class="header-nav-ul">
-          <li><a href="section-1">Om mig</a></li>
-          <li><a href="section-2">Tidigare arbetslivserfarenhet</a></li>
-          <li><a href="section-3">Mina intresse</a></li>
-          <li><a href="section-4">Framtid</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- Hälsningsmeddelande placeras på mitten av sidan -->
-    <h1>Welcome to My Responsive Website</h1>
-    <main>
-      <!-- Section 1 -->
-      <section class="section-1">
-        <h2>Om mig</h2>
-        <div>
-          <img src="path/to/your/image.jpg" alt="Description of image" />
+<html lang="sv">
+<!-- Metadata och stilmall -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Elvis Kikas personliga portfolio från kursen Webbteknik 1.">
+  <link rel="stylesheet" href="./src/style.css">
+  <title>Elvis Kika — Min portfolio</title>
+</head>
+<body>
+  <!-- Tillgänglighet – hoppa till innehållet -->
+  <a class="skip-link" href="#main">Hoppa till innehållet</a>
+  <!-- Sidhuvud och navigering -->
+  <header id="toppen" class="site-header">
+    <a class="wordmark" href="#toppen" aria-label="Elvis Kika, till början">EK<span>.</span></a>
+    <nav aria-label="Huvudmeny"><ul class="nav-list">
+      <li><a href="#om-mig">Om mig</a></li><li><a href="#erfarenhet">Erfarenhet</a></li><li><a href="#intressen">Intressen</a></li><li><a href="#framtid">Framtid</a></li>
+    </ul></nav>
+    <span class="header-note">En portfolio i utveckling</span>
+  </header>
+  <!-- Sidans huvudinnehåll -->
+  <main id="main">
+    <!-- Om mig -->
+    <section id="om-mig" class="section about">
+      <div class="container about-grid">
+        <div class="intro">
+          <p class="eyebrow">Linnéuniversitetet/Webbprogrammerare/Webbteknik 1</p>
+          <h1>Hej, jag är<br>Elvis Kika<span class="accent">.</span></h1>
+          <p class="lead">Välkommen till min lilla plats på webben.</p>
+          <p>Den här sidan är början på min personliga portfolio. Jag skapar den som en del av kursen Webbteknik 1 och använder den för att samla det jag lär mig om HTML, CSS och responsiv design.</p>
+          <p>Här finns plats för mina erfarenheter, mina intressen och det jag vill göra framöver. Sidan får växa tillsammans med mig, ett steg och ett projekt i taget.</p>
+          <a class="button" href="#erfarenhet">Lär känna mig <span aria-hidden="true">↗</span></a>
         </div>
-        <p>This is the about section of the responsive website.</p>
-      </section>
-      <!-- Section 2 -->
-      <section class="section-2">
-        <h2>Tidigare arbetslivserfarenhet</h2>
-        <p>This is the contact section of the responsive website.</p>
-      </section>
-      <!-- Section 3 -->
-      <section class="section-3">
-        <h2>Mina intresse</h2>
-        <div>
-          <img src="path/to/your/image.jpg" alt="Description of image" />
+        <figure><img src="./public/images/Workplace.jpeg" alt="Illustration av en arbetsplats med dator, kaffekopp och dokumenter." width="640" height="680" fetchpriority="high"><figcaption><span>01 / En början</span><span>Nyfikenhet som drivkraft</span></figcaption></figure>
+      </div>
+      <div class="container section-end"><span>Lite om mig. Och det som kommer sen.</span><a href="#erfarenhet">Scrolla vidare ↓</a></div>
+    </section>
+    <!-- Erfarenhet -->
+    <section id="erfarenhet" class="section experience">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">01 / Erfarenhet</p><h2>Tidigare arbetserfarenheter.</h2><p>Jag är utbildad och legitimerad sjuksköterska sedan flera år tillbaka. Jag har arbetat inom olika vårdmiljöer och samlat värdefulla erfarenheter som jag nu tar med mig in i webbutvecklingens värld. Förhoppningsvis kan jag kombinera mina tidigare kunskaper med nya färdigheter för att skapa meningsfulla och användarvänliga webblösningar.</p></div>
+        <div class="experience-grid">
+          <div class="experience-intro"><h3>Från kunskap<br>till praktik.</h3><p>Den här webbplatsen är ett andra exempel på hur jag omsätter kursens innehåll i något konkret. Struktur, layout och tillgänglighet får mötas i samma projekt.</p><span class="small-label">Lärande pågår ↗</span></div>
+          <div class="timeline">
+            <article><p class="eyebrow">2026 · Utbildning</p><h3>Webbteknik 1</h3><p>Linnéuniversitetet, Distans. I kursen arbetar jag med HTML och CSS och med att skapa webbsidor som fungerar på både mobil och större skärmar.</p></article>
+            <article><p class="eyebrow">2026 · Kursprojekt</p><h3>Min portfolio</h3><p>En responsiv sida med tydliga sektioner, lokal bildhantering och navigering inom sidan. Ett projekt att fortsätta utveckla efter kursen.</p></article>
+            <article><p class="eyebrow">2020 · Självstudier</p><h3>Programmering och webbutveckling</h3><p>Jag har sedan länge sen intresserat mig för programmering och webbutveckling och arbetar kontinuerligt med att förbättra mina färdigheter inom området. Jag har privat lärt mig olika programmeringsspråk och byggt egna projekt för att fördjupa min förståelse. Jag har även läst olika kursen på Högskolan och Universitetet. Senaste läste jag en termin på en Yrkeshögskola. Med min akademisk bakgrund bestående av en kandidat inom sjuksköterskeprogrammet och två magisterexamen inom intensvivård och anestesi upplevde  jag dock att utbildning på en yrkeshögskola inte var tillräcklig för mina ambitioner inom webbutveckling, varför jag sökte vidate till högskolan. Jag har även tränat en hel del på Hyperskill, UDEMI, W3schools, Supersimplewebdev med mera.</p></article>
+          </div>
         </div>
-        <p>This is an additional section of the responsive website.</p>
-      </section>
-      <!-- Section 4 -->
-       <section class="section-4">
-        <h2>Framtid</h2>
-        <p>This is the footer section of the responsive website.</p>
-       </section>
-      <footer id="footer">
-        <p>&copy; 2026 Student: Elvis Kika</p>
-      </footer>
-    </main>
-  </body>
+      </div>
+    </section>
+    <!-- Intressen -->
+    <section id="intressen" class="section interests">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">02 / Intressen</p><h2>Önskar mig det här.</h2><p>Vill helst uppleva det här regelbundet.</p></div>
+        <div class="interests-grid">
+          <figure><img src="./public/images/Beach.jpeg" alt="På väg mot stranden." width="760" height="560" loading="lazy"><figcaption>Det finns alltid något nytt att upptäcka.</figcaption></figure>
+          <div class="interest-copy"><span class="large-number" aria-hidden="true">+</span><h3>Gym och landsvägscykling.</h3><p>Jag tränar regelbundet på gymmet och cyklar på landsvägar när vädret tillåter. Sent vår, sommar och tidig höst är mina favoritperioder för utomhusaktiviteter. Vädret och vägunderlaget påverkar ofta mina träningspass.</p><p class="draft-note">Jag äger en Merida Endurance 4000 för vardaglig cykling och använder den både för träning och pendling. Jag äger också Scott Addict Racer RC 20 för längre och snabbare turer.</p><p class="small-label">Nyfikenhet / Kreativitet / Utveckling</p></div>
+        </div>
+      </div>
+    </section>
+    <!-- Framtid -->
+    <section id="framtid" class="section future">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">03 / Framtid</p><h2>Nästa steg börjar här<span class="accent">.</span></h2><p>Det här är en början. Jag kommer att fylla det med fler berättelser och projekt framöver.</p></div>
+        <div class="future-grid">
+          <article class="future-card"><span class="card-number">01</span><h3>Göra sidan personlig</h3><p>Fylla på med mina egna berättelser, erfarenheter och bilder så att portfolion speglar vem jag är.</p></article>
+          <article class="future-card"><span class="card-number">02</span><h3>Samla mina projekt</h3><p>Visa kommande arbeten och beskriva hur de växer fram, vilka problem de löser och vad jag lär mig längs vägen.</p></article>
+          <article class="future-card"><span class="card-number">03</span><h3>Fortsätta utvecklas</h3><p>Bygga vidare på grunderna i HTML och CSS och förbättra både sidans innehåll och upplevelsen för besökaren.</p></article>
+        </div>
+        <div class="future-end"><p>En sida att växa med: början till något stort</p><a class="button button-light" href="#om-mig">Tillbaka till början ↑</a></div>
+      </div>
+    </section>
+  </main>
+  <!-- Sidfot -->
+  <footer class="site-footer"><div class="container footer-inner"><a class="wordmark" href="#toppen" aria-label="Till sidans början">EK<span>.</span></a><p>© 2026 Elvis Kika</p><p>Skapad för Webbteknik 1 · Kalmar</p></div></footer>
+</body>
 </html>
